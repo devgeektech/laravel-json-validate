@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Installation
+
+1. Copy `.env.example` file and create duplicate. Use `cp` command for Linux or mac.
+
+        cp .env.example .env
+
+2. Create a table in MySQL database and fill the database details `DB_DATABASE` in `.env` file.
+
+3. The below command will create tables into database using Laravel migration and seeder.
+
+        php artisan migrate:fresh --seed
+
+4. Generate your application encryption key:
+
+        php artisan key:generate
+
+
+5. Start the localhost server:
+    
+        php artisan serve
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
